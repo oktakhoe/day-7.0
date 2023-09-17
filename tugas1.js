@@ -20,4 +20,3 @@ rl.question("Masukkan tahun: ", (tahun) => {
 
   kabisat(tahun);
 });
-
