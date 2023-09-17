@@ -31,7 +31,7 @@ function MajoritySweeper(arr) {
       counts[num] = 1;
     }
 
-    // Temukan nilai mayoritas
+    // Temukan nilai mayoritas dan yang pertama kali ditemukan
     for (const num in counts) {
       if (
         counts[num] > maxCount ||
@@ -43,7 +43,7 @@ function MajoritySweeper(arr) {
     }
   }
 
-  // Filter elemen-elemen yang bukan mayoritas atau yang pertama kali ditemui
+  // Filter elemen-elemen yang bukan mayoritas
   for (let i = 0; i < arr.length; i++) {
     if (arr[i] !== Number(majority) || counts[arr[i]] === 1) {
       result.push(arr[i]);
