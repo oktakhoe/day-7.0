@@ -1,3 +1,8 @@
+/* Buatkan algoritma untuk menentukan tahun yang di input merupakan tahun kabisat atau bukan. */
+
+// Note: hanya boleh menggunakan looping (for), percabangan, dan operator javascript
+
+const { notEqual } = require("assert");
 const readline = require(`readline`);
 
 const rl = readline.createInterface({
